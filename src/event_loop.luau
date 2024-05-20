@@ -28,6 +28,10 @@ function event_loop.new()
 	return nil :: any
 end
 
+--[=[
+	All the event loop subscribers get disconnected automatically
+	once all the windows in the application are closed
+]=]
 function event_loop.subscribe(window_id: types.WindowId, handler: (event: Event?) -> ()): types.Connection
 	return nil :: any
 end

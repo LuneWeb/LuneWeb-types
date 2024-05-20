@@ -6,6 +6,7 @@ export type Window = {
 	closed: boolean,
 
 	close: (self: Window) -> (),
+	open: (self: Window) -> (),
 }
 
 export type Event = "CloseRequested" | "RedrawRequested"
