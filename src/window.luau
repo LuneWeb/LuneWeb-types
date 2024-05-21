@@ -1,5 +1,4 @@
 local types = require("../shared")
-
 export type WindowId = types.WindowId
 export type Window = types.Window
 
