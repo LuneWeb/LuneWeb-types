@@ -12,6 +12,7 @@ export type WebView = {
 
 export type WebViewBuilder = {
 	with_url: (self: WebViewBuilder, url: string) -> (),
+	with_html: (self: WebViewBuilder, html: string) -> (),
 	with_initialization_script: (self: WebViewBuilder, script: string) -> (),
 	with_custom_protocol: (self: WebViewBuilder, name: string, handler: ServeHttpHandler) -> Connection,
 	build: (self: WebViewBuilder, window: types.Window) -> WebView,
