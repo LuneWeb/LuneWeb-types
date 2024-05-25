@@ -8,6 +8,7 @@ export type WebView = {
 	evaluate_script_with_response: (self: WebView, script: string) -> unknown,
 	evaluate_script: (self: WebView, script: string) -> (),
 	subscribe: (self: WebView, channel: string, callback: (value: unknown) -> ()) -> Connection,
+	load_url: (self: WebView, url: string) -> (),
 }
 
 export type WebViewBuilder = {
