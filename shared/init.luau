@@ -8,7 +8,7 @@ export type Window = {
 	open: (self: Window) -> (),
 }
 
-export type Event = "CloseRequested" | "RedrawRequested"
+export type Event = "CloseRequested"
 
 export type Connection = {
 	connected: boolean,
